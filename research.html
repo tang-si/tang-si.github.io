@@ -104,40 +104,6 @@
     <p><b>Phone</b>: +86 13041092011</p>
       </header>
       <section>
-
-    <h2><a id="recent-RRs-updated" class="anchor" href="#RRpapers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Papers under Revision</h2>
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="./research/extension_final.pdf">Hierarchical Contrastive Learning Enhanced Heterogeneous Graph Neural Network</a> <br> <b>Authors</b>: <b>Nian Liu</b>, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, Hui Han, <a href="http://shichuan.org/">Chuan Shi</a> <br> <b>Journal</b>: <i>IEEE Transactions on Knowledge and Data Engineering</i> <b>(TKDE)</b><br>
-    <p style="text-align: center;"><img src="./research/model_heco_.PNG" height="250" width="400"></p>
-    <p style="margin:0"> <b>Overview</b>: This work argues that besides cross-view contrast to capture commonality in HeCo, view-specific 
-information also should be explored by intra-view contrast. </p>
-    <p style="margin:0"><button class="accordion">
-      Abstract
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Heterogeneous graph neural networks (HGNNs) as an emerging technique have shown superior capacity of dealing with
-heterogeneous information network (HIN). However, most HGNNs follow a semi-supervised learning manner, which notably limits their
-wide use in reality since labels are usually scarce in real applications. Recently, contrastive learning, a self-supervised method, becomes
-one of the most exciting learning paradigms and shows great potential when there are no labels. In this paper, we study the problem
-of self-supervised HGNNs and propose a novel co-contrastive learning mechanism for HGNNs, named HeCo. Different from traditional
-contrastive learning which only focuses on contrasting positive and negative samples, HeCo employs cross-view contrastive mechanism.
-Specifically, two views of a HIN (network schema and meta-path views) are proposed to learn node embeddings, so as to capture both
-of local and high-order structures simultaneously. Then the cross-view contrastive learning, as well as a view mask mechanism, is
-proposed, which is able to extract the positive and negative embeddings from two views. This enables the two views to collaboratively
-supervise each other and finally learn high-level node embeddings. Moreover, to further boost the performance of HeCo, two additional
-methods are designed to generate harder negative samples with high quality. The essence of HeCo is to make positive samples from
-different views close to each other by cross-view contrast, and learn the factors invariant to two proposed views. However, besides
-the invariant factors, view-specific factors complementally provide the diverse structure information between different nodes, which also
-should be contained into the final embeddings. Therefore, we need to further explore each view independently and propose a modified
-model, called HeCo++. Specifically, HeCo++ conducts hierarchical contrastive learning, including cross-view and intra-view contrasts,
-which aims to enhance the mining of respective structures. Extensive experiments conducted on a variety of real-world networks show
-the superior performance of the proposed methods over the state-of-the-arts. </p></div>
-    
-    <hr>
-
-    <h2><a id="recent-papers-updated" class="anchor" href="#workingpapers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Working Papers</h2>
-    <p style="margin:0"> Coming soon. <br> <br> 
-
-    <hr>
-
     <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Published Papers</h2>
     <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2210.02330">Revisiting Graph Contrastive Learning from the Perspective of Graph Spectrum</a> <br> <b>Authors</b>: <b>Nian Liu</b>, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, <a href="https://scholar.google.com/citations?user=m4rsQCAAAAAJ&hl=zh-CN">Deyu Bo</a>, <a href="http://shichuan.org/">Chuan Shi</a>, <a href="https://ece.duke.edu/faculty/jian-pei">Jian Pei</a><br> <b>Conference</b>: <i>Advances in neural information processing systems</i> <b>(NeurIPS)</b>, 2022<br>
     <p style="margin:0"><img src="./research/model_spco.PNG" height="200" width="500"></p>
@@ -231,25 +197,62 @@ PaperDigest, this paper is one of the most influential paper in KDD 2021 as for 
     </button>
     <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://dl.acm.org/doi/10.1145/3447548.3467415">Online Presentation</a></p></div>
     
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://dl.acm.org/doi/10.1145/3468674">Embedding Heterogeneous Information Network in Hyperbolic Spaces</a> <br> <b>Authors</b>: Yiding Zhang, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, <b>Nian Liu</b>, <a href="http://shichuan.org/">Chuan Shi</a> <br><b>Journal</b>: <i>ACM Transactions on Knowledge Discovery from Data</i> <b>(ACM TKDD)</b>, 2021<br>
+    <p style="margin:0"> <b>Overview</b>:  We are the first to explore HIN embedding in hyperbolic spaces, naturally capture the hierarchical 
+and power-law structure in complex network.</p> 
+    <p style="margin:0"><button class="accordion"> 
+    Abstract
+    </button>   
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Heterogeneous information network (HIN) embedding, aiming to project HIN into a low-dimensional space, has attracted considerable research attention. Most of the existing HIN embedding methods focus on preserving the inherent network structure and semantic correlations in Euclidean spaces. However, one fundamental problem is whether the Euclidean spaces are the intrinsic spaces of HIN? Recent researches find the complex network with hyperbolic geometry can naturally reflect some properties, e.g., hierarchical and power-law structure. In this article, we make an effort toward embedding HIN in hyperbolic spaces. We analyze the structures of three HINs and discover some properties, e.g., the power-law distribution, also exist in HINs. Therefore, we propose a novel HIN embedding model HHNE. Specifically, to capture the structure and semantic relations between nodes, HHNE employs the meta-path guided random walk to sample the sequences for each node. Then HHNE exploits the hyperbolic distance as the proximity measurement. We also derive an effective optimization strategy to update the hyperbolic embeddings iteratively. Since HHNE optimizes different relations in a single space, we further propose the extended model HHNE++. HHNE++ models different relations in different spaces, which enables it to learn complex interactions in HINs. The optimization strategy of HHNE++ is also derived to update the parameters of HHNE++ in a principle manner. The experimental results demonstrate the effectiveness of our proposed models.</p></div><br>
+    
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2104.07477">Lorentzian graph convolutional networks</a> <br> <b>Authors</b>: Yiding Zhang, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, <a href="http://shichuan.org/">Chuan Shi</a>, <b>Nian Liu</b>, <a href="https://www.gjsong-pku.cn/">Guojie Song</a> <br><b>Conference</b>: <i>International World Wide Web Conference</i> <b>(TheWebConf)</b>, 2021<br>
+    <p style="margin:0"><img src="./research/model_lgcn.PNG" height="200" width="500"></p>
+    <p style="margin:0"> <b>Overview</b>: We study on the hyperbolic GCN, rebuild graph operations with Lorentzian version and design a 
+neighborhood aggregation method based on the centroid of Lorentzian distance.</p> 
+    <p style="margin:0"> <b>Code</b>: https://github.com/BUPT-GAMMA/lgcn_torch</p> 
+    <p style="margin:0"><button class="accordion"> 
+    Abstract
+    </button> 
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Graph convolutional networks (GCNs) have received considerable research attention recently. Most GCNs learn the node representations in Euclidean geometry, but that could have a high distortion in the case of embedding graphs with scale-free or hierarchical structure. Recently, some GCNs are proposed to deal with this problem in non-Euclidean geometry, e.g., hyperbolic geometry. Although hyperbolic GCNs achieve promising performance, existing hyperbolic graph operations actually cannot rigorously follow the hyperbolic geometry, which may limit the ability of hyperbolic geometry and thus hurt the performance of hyperbolic GCNs. In this paper, we propose a novel hyperbolic GCN named Lorentzian graph convolutional network (LGCN), which rigorously guarantees the learned node features follow the hyperbolic geometry. Specifically, we rebuild the graph operations of hyperbolic GCNs with Lorentzian version, e.g., the feature transformation and non-linear activation. Also, an elegant neighborhood aggregation method is designed based on the centroid of Lorentzian distance. Moreover, we prove some proposed graph operations are equivalent in different types of hyperbolic geometry, which fundamentally indicates their correctness. Experiments on six datasets show that LGCN performs better than the state-of-the-art methods. LGCN has lower distortion to learn the representation of tree-likeness graphs compared with existing hyperbolic GCNs. We also find that the performance of some hyperbolic GCNs can be improved by simply replacing the graph operations with those we defined in this paper.</p></div><br>
+
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2201.07708">Debiased Graph Neural Networks with Agnostic Label Selection Bias</a> <br> <b>Authors</b>: <a href="https://scholar.google.com/citations?hl=zh-CN&user=3LxcBjkAAAAJ">Shaohua Fan</a>, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, <a href="http://shichuan.org/">Chuan Shi</a>, <a href="https://kunkuang.github.io/">Kun Kuang</a>,<b>Nian Liu</b>, <a href="https://scholar.google.com/citations?hl=zh-CN&user=s5INMX8AAAAJ">Bai Wang</a> <br><b>Journal</b>: <i>IEEE Transactions on Neural Networks and Learning Systems </i> <b>(IEEE TNNLS)</b>, 2022<br>
+    <p style="margin:0"><img src="./research/model_tnnls.PNG" height="200" width="500"></p>
+    <p style="margin:0"> <b>Overview</b>: We focus on the label selection bias in GNN, and propose Debiased GNN to eliminate spurious 
+correlation by reweighting samples and improve stability of prediction.</p> 
+    <p style="margin:0"> <b>Code</b>: https://github.com/googlebaba/TNNLS2022-DGNN</p> 
+    <p style="margin:0"><button class="accordion"> 
+    Abstract
+    </button> 
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Most existing Graph Neural Networks (GNNs) are proposed without considering the selection bias in data, i.e., the inconsistent distribution between the training set with test set. In reality, the test data is not even available during the training process, making selection bias agnostic. Training GNNs with biased selected nodes leads to significant parameter estimation bias and greatly impacts the generalization ability on test nodes. In this paper, we first present an experimental investigation, which clearly shows that the selection bias drastically hinders the generalization ability of GNNs, and theoretically prove that the selection bias will cause the biased estimation on GNN parameters. Then to remove the bias in GNN estimation, we propose a novel Debiased Graph Neural Networks (DGNN) with a differentiated decorrelation regularizer. The differentiated decorrelation regularizer estimates a sample weight for each labeled node such that the spurious correlation of learned embeddings could be eliminated. We analyze the regularizer in causal view and it motivates us to differentiate the weights of the variables based on their contribution on the confounding bias. Then, these sample weights are used for reweighting GNNs to eliminate the estimation bias, thus help to improve the stability of prediction on unknown test nodes. Comprehensive experiments are conducted on several challenging graph datasets with two kinds of label selection biases. The results well verify that our proposed model outperforms the state-of-the-art methods and DGNN is a flexible framework to enhance existing GNNs.</p></div><br>
     
     <hr>
-
-    <h2><a id="works-in-progress" class="anchor" href="#workinprogress" aria-hidden="true"><span class="octicon octicon-link"></span></a>Works in Progress</h2>
-
-    <p style="margin:0"> <b>Beating the Heat: Temperature and Spatial Reallocation over the Long Run</b> <br> with <a href="https://www.christosmakridis.com/">Christos Makridis</a>. <br><button class="accordion">
+    
+    
+    <h2><a id="recent-RRs-updated" class="anchor" href="#RRpapers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Papers under Revision</h2>
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="./research/extension_final.pdf">Hierarchical Contrastive Learning Enhanced Heterogeneous Graph Neural Network</a> <br> <b>Authors</b>: <b>Nian Liu</b>, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, Hui Han, <a href="http://shichuan.org/">Chuan Shi</a> <br> <b>Journal</b>: <i>IEEE Transactions on Knowledge and Data Engineering</i> <b>(TKDE)</b><br>
+    <p style="text-align: center;"><img src="./research/model_heco_.PNG" height="250" width="400"></p>
+    <p style="margin:0"> <b>Overview</b>: This work argues that besides cross-view contrast to capture commonality in HeCo, view-specific 
+information also should be explored by intra-view contrast. </p>
+    <p style="margin:0"><button class="accordion">
       Abstract
     </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Does temperature affect real economic activity? Using the annual Current Population Survey between 1963 and 2015, we show that there is no association between temperature and earnings, hours, or output after controlling for time-invariant spatial heterogeneity and time-varying demographic factors. These results are robust to five separate sources of micro-data, different sampling horizons, functional forms, spatial measures of temperature, and subsets of the data. This paper studies the relationship between temperature and productivity across space and time. Motivated by these null results, we develop a spatial equilibrium model where temperature can affect not only firm productivity, but also individual locational choice. After calibrating the model, we use it to disentangle the role of reallocation versus actual productivity losses in the U.S. economy between 1980 and 2015. Nearly all of the variation is driven by reallocation. We subsequently use the model to evaluate a counterfactual climate scenario and recover a new spatial equilibrium for the U.S. economy by 2050. </p></div><br>
-
-    <p style="margin:0"> <b>The Role of Supply and Demand Factors in Explaining the Migration of College Majors</b> <br><button class="accordion">
-      Abstract
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>  This paper documents a new stylized fact about the United States labor market: internal migration rates are dramatically different across college majors. For some college majors, migration rates are even lower than those without a college degree. I relate major migration rates with majors' spatial concentration and find that a major's spatial concentration explains about one fourth of the cross-major variation in migration rates. With this descriptive evidence as a guide, I estimate a structural model of locational choice where college graduates have heterogeneous preferences---at the detailed major level---for living close to home, and for working in a location with a high concentration of their fellow majors. Using estimates of the structural model, I decompose the cross-major migration rates into supply and demand factors and find that supply factors (i.e. moving costs) explain the vast majority of differences in migration rates across majors. My findings underscore the difficulty in attracting college majors to a particular location using demand-side investments. My results also highlight the importance of place in determining the labor market outcomes of college majors.</p></div><br>
-
-    <p style="margin:0"> <b>Minorities in STEM: The Role of Ability Revelation</b> <br> with <a href="http://www.nickchk.com/">Nick Huntington-Klein</a>. <br><button class="accordion">
-      Abstract
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Coming soon.</p></div><br>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Heterogeneous graph neural networks (HGNNs) as an emerging technique have shown superior capacity of dealing with
+heterogeneous information network (HIN). However, most HGNNs follow a semi-supervised learning manner, which notably limits their
+wide use in reality since labels are usually scarce in real applications. Recently, contrastive learning, a self-supervised method, becomes
+one of the most exciting learning paradigms and shows great potential when there are no labels. In this paper, we study the problem
+of self-supervised HGNNs and propose a novel co-contrastive learning mechanism for HGNNs, named HeCo. Different from traditional
+contrastive learning which only focuses on contrasting positive and negative samples, HeCo employs cross-view contrastive mechanism.
+Specifically, two views of a HIN (network schema and meta-path views) are proposed to learn node embeddings, so as to capture both
+of local and high-order structures simultaneously. Then the cross-view contrastive learning, as well as a view mask mechanism, is
+proposed, which is able to extract the positive and negative embeddings from two views. This enables the two views to collaboratively
+supervise each other and finally learn high-level node embeddings. Moreover, to further boost the performance of HeCo, two additional
+methods are designed to generate harder negative samples with high quality. The essence of HeCo is to make positive samples from
+different views close to each other by cross-view contrast, and learn the factors invariant to two proposed views. However, besides
+the invariant factors, view-specific factors complementally provide the diverse structure information between different nodes, which also
+should be contained into the final embeddings. Therefore, we need to further explore each view independently and propose a modified
+model, called HeCo++. Specifically, HeCo++ conducts hierarchical contrastive learning, including cross-view and intra-view contrasts,
+which aims to enhance the mining of respective structures. Extensive experiments conducted on a variety of real-world networks show
+the superior performance of the proposed methods over the state-of-the-arts. </p></div>
 
       </section>
     </div>
