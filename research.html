@@ -139,7 +139,7 @@ the superior performance of the proposed methods over the state-of-the-arts. </p
     <hr>
 
     <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Published Papers</h2>
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2210.02330">Revisiting Graph Contrastive Learning from the Perspective of Graph Spectrum</a> <br>Nian Liu</b>, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, Deyu Bo, <a href="http://shichuan.org/">Chuan Shi</a>, <a href="https://ece.duke.edu/faculty/jian-pei">Jian Pei</a><br> <i>Advances in neural information processing systems</i> <b>(NeurIPS)</b>, 2022<br>
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2210.02330">Revisiting Graph Contrastive Learning from the Perspective of Graph Spectrum</a> <br><b>Nian Liu</b>, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, <a href="https://scholar.google.com/citations?user=m4rsQCAAAAAJ&hl=zh-CN">Deyu Bo</a>, <a href="http://shichuan.org/">Chuan Shi</a>, <a href="https://ece.duke.edu/faculty/jian-pei">Jian Pei</a><br> <i>Advances in neural information processing systems</i> <b>(NeurIPS)</b>, 2022<br>
     <p style="margin:0"><img src="./research/model_spco.PNG" height="200" width="500"></p>
     <p style="margin:0"> <b>Overview</b>: This is the first attempt to fundamentally explore the augmentation strategies for GCL from spectral 
 domain. We not only reveal the general graph augmentation rule behind different augmentation, but also 
@@ -177,27 +177,40 @@ performances of a wide variety of different GCL methods.</p></div>
     </button>
     <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Update soon </p></div><br>
     
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://doi.org/10.1016/j.jeconom.2020.07.056">Understanding Migration Aversion using Elicited Counterfactual Choice Probabilities</a> <br> with <a href="https://www.newyorkfed.org/research/economists/kosar/index.html">Gizem Ko&#351;ar</a> and <a href="https://www.newyorkfed.org/research/economists/vanderklaauw/index.html">Wilbert van der Klaauw</a> <br> <i>Journal of Econometrics</i>, 2022, 231 (1): 123&ndash;147.  <br><button class="accordion"> 
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2201.05540">Compact Graph Structure Learning via Mutual Information Compression</a> <br><b>Nian Liu</b>, <a href="https://wangxiaocs.github.io/">Xiao Wang</a>, <a href="https://sites.google.com/a/email.wm.edu/teddy-lfwu/">Lingfei Wu</a>, <a href="http://academic.hugochan.net/">Yu Chen</a>, <a href="https://sites.google.com/view/xiaojie-guo-personal-site">Xiaojie Guo</a>, <a href="http://shichuan.org/">Chuan Shi</a><br> <i>International World Wide Web Conference</i> <b>(TheWebConf)</b>, 2022 <br>
+    <p style="margin:0"><img src="./research/model_cogsl.PNG" height="200" width="500"></p>
+    <p style="margin:0"> <b>Overview</b>:  In this paper, we are the first to define the “optimal graph structure” in principle by Information 
+theory, which can achieve effectiveness and robustness simultaneously.</p> 
+    <button class="accordion"> 
       Abstract
     </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>This paper investigates how migration and location choice decisions depend on a large set of location characteristics, with particular focus on measuring the importance and nature of non-monetary costs of moving. We employ a stated-preference approach to elicit respondents' choice probabilities for a set of hypothetical choice scenarios, using two waves from the NY Fed's Survey of Consumer Expectations. Our stated probabilistic choice approach allows us to recover the distribution of individual-level preferences for location and mobility attributes without concerns about omitted variables and selection biases that hamper analyses based on observed mobility choices alone. We estimate substantial heterogeneity in the willingness-to-pay (WTP) for location characteristics and in moving costs, both across and within demographic groups. We find moving costs to be strongly associated with attachment to the current neighborhood and dwelling and to social networks. Our results indicate evidence of sorting into current locations based on preferences for location attributes as well as a strong negative association between respondents' non-monetary moving costs and their moving expectations and actual mobility decisions. </p></div>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Graph Structure Learning (GSL) recently has attracted considerable
+attentions in its capacity of optimizing graph structure as well as
+learning suitable parameters of Graph Neural Networks (GNNs) simultaneously. Current GSL methods mainly learn an optimal graph
+structure (final view) from single or multiple information sources
+(basic views), however the theoretical guidance on what is the optimal graph structure is still unexplored. In essence, an optimal graph
+structure should only contain the information about tasks while
+compress redundant noise as much as possible, which is defined as
+"minimal sufficient structure", so as to maintain the accurancy and
+robustness. How to obtain such structure in a principled way? In
+this paper, we theoretically prove that if we optimize basic views
+and final view based on mutual information, and keep their performance on labels simultaneously, the final view will be a minimal
+sufficient structure. With this guidance, we propose a Compact GSL
+architecture by MI compression, named CoGSL. Specifically, two
+basic views are extracted from original graph as two inputs of the
+model, which are refinedly reestimated by a view estimator. Then,
+we propose an adaptive technique to fuse estimated views into the
+final view. Furthermore, we maintain the performance of estimated
+views and the final view and reduce the mutual information of every
+two views. To comprehensively evaluate the performance of CoGSL,
+we conduct extensive experiments on several datasets under clean
+and attacked conditions, which demonstrate the effectiveness and
+robustness of CoGSL. </p></div>
     <p style="margin:0"><button class="accordion">
-      Online Appendix
+      Vedio
     </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://tyleransom.github.io/research/SCEonlineAppendix.pdf">Online Appendix</a> </p></div>
-    <p style="margin:0"><button class="accordion">
-      Replication files
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://github.com/tyleransom/JE-SCE-Migration/releases/tag/1.0">Data &amp; code for replication</a> <br> <a href="https://doi.org/10.5281/zenodo.3960244"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3960244.svg" alt="DOI"></a> </p></div>
-    <p style="margin:0"><button class="accordion">
-      Other versions
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://tyleransom.github.io/research/SCE_migration.pdf">Preprint</a> (June 22, 2020) <br> <a href="http://www.cesifo.org/DocDL/cesifo1_wp8117_0.pdf">CESifo Working Paper No. 8117</a> (February 2020) <br> <a href="https://www.newyorkfed.org/research/staff_reports/sr883.html">New York Fed Staff Report No. 883</a> (April 2019) <br> <a href="http://ftp.iza.org/dp12271.pdf">IZA Discussion Paper No. 12271</a> (April 2019) </p></div>
-    <p style="margin:0"><button class="accordion">
-      Media coverage
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://www.citylab.com/life/2019/05/moving-location-new-city-how-much-cost-mobile-rooted-stuck/590521/"><i>CityLab</i></a> </p></div><br>
-
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://www.youtube.com/watch?v=cSohAhgO8Po">Online Presentation</a> </p></div><br>
+    
     <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://www.sciencedirect.com/science/article/abs/pii/S0272775722000322">Recruit to Reject? Harvard and African American Applicants</a> <br> with <a href="http://public.econ.duke.edu/~psarcidi/">Peter Arcidiacono</a> and <a href="http://www.terry.uga.edu/directory/economics/josh-kinsler">Josh Kinsler</a> <br> <i>Economics of Education Review</i>, 2022, 88: 102255. <br> Guest column at <a href="https://voxeu.org/article/recruiting-practices-elite-universities-case-harvard"><i>VoxEU</i></a> <br><button class="accordion"> 
     Abstract
     </button>   
