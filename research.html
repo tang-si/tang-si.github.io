@@ -106,121 +106,52 @@
     <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://ieeexplore.ieee.org/document/9334371">Fast Phased Array Calibration Method Based on Multiple Measuring Probes</a> <br> <b>Authors</b>: <b>Si Tang</b>, Zhengpeng Wang<br> <b>Conference</b>: <i>IEEE International Conference on Electronic Information and Communication Technology </i> <b>(ICEICT)</b>, 2020<br>
     <p style="text-align:center"><img src="./research/ICEICT.png" height="200" width="250"></p>
     <p style="margin:0"><img src="./research/ICEICT1.png" height="200" width="500"></p>
-    <p style="margin:0"> <b>Overview</b>: </p> 
+    <p style="margin:0"> <b>Overview</b>: The appropriate setting of multiple probes can effectively reduce the number of AUT’s amplitude and phase setting states and the times of measurement, saving measurement time and improving testing effectiveness. We simulated three typical system parameters and verified that this method can obtain a coefficient matrix with an optimal condition number, equal to 1.</p> 
     <p style="margin:0"><button class="accordion"> 
     Abstract   
     </button>   
     <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>This paper presents a fast phased array calibration method which significantly reduces the number of antennas under test (AUT) amplitude and phase setting states. Multiple measuring probes are introduced to record transmission coefficients as AUT works at different states. A coefficient matrix with a small condition number is constructed to calculate the initial excitation coefficients of each antenna element. Simulation results show that the coefficient matrix condition number can be reduced to 1 by optimizing the geometry of the measurement system. When the signal-to-noise ratio is higher than 18dB, the amplitude error of the calibration result is less than 0.5dB and the phase error is less than 20 degrees in the optimal conditional number configuration. This method effectively reduces the measurement time for the phased array calibration and improves the stability of the calibration system.</p></div><br>
     
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2201.05540">Compact Graph Structure Learning via Mutual Information Compression</a> <br> <b>Authors</b>: <b>Nian Liu</b>, Xiao Wang, Lingfei Wu, Yu Chen, Xiaojie Guo, Chuan Shi<br> <b>Conference</b>: <i>International World Wide Web Conference</i> <b>(TheWebConf)</b>, 2022 <br>
-    <p style="margin:0"><img src="./research/model_cogsl.png" height="200" width="500"></p>
-    <p style="margin:0"> <b>Overview</b>:  In this paper, we are the first to define the “optimal graph structure” in principle by Information 
-theory, which can achieve effectiveness and robustness simultaneously.</p> 
-    <p style="margin:0"> <b>Code</b>: https://github.com/liun-online/CoGSL</p> 
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://cpfd.cnki.com.cn/Article/CPFDTOTAL-ZDWB202009001009.htm">Analysis of Terminal 4 × 4 MIMO OTA Test System Using Carrier Aggregation Technology (in Chinese)</a> <br> <b>Authors</b>: <b>Tang Si</b>, Wang Zhengpeng<br> <b>Conference</b>: <i>National Conference on Microwave and Millimeter Waves</i> <b>(NCMMW)</b>, 2020<br>
+    <p style="margin:0"><img src="./research/NCMMW.png" height="200" width="500"></p>
+    <p style="margin:0"> <b>Overview</b>:This paper focuses on the OTA testing of four-element MIMO channels, and establishes the simulation model based on MATLAB. The limitations of frequency spacing and matrix condition number on the isolation are also analyzed for the carrier aggregation technology that may be used in 5G large-scale MIMO, which will provide important reference for the design of future 5G OTA test systems.</p> 
     <p style="margin:0"><button class="accordion"> 
       Abstract
     </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Graph Structure Learning (GSL) recently has attracted considerable
-attentions in its capacity of optimizing graph structure as well as
-learning suitable parameters of Graph Neural Networks (GNNs) simultaneously. Current GSL methods mainly learn an optimal graph
-structure (final view) from single or multiple information sources
-(basic views), however the theoretical guidance on what is the optimal graph structure is still unexplored. In essence, an optimal graph
-structure should only contain the information about tasks while
-compress redundant noise as much as possible, which is defined as
-"minimal sufficient structure", so as to maintain the accurancy and
-robustness. How to obtain such structure in a principled way? In
-this paper, we theoretically prove that if we optimize basic views
-and final view based on mutual information, and keep their performance on labels simultaneously, the final view will be a minimal
-sufficient structure. With this guidance, we propose a Compact GSL
-architecture by MI compression, named CoGSL. Specifically, two
-basic views are extracted from original graph as two inputs of the
-model, which are refinedly reestimated by a view estimator. Then,
-we propose an adaptive technique to fuse estimated views into the
-final view. Furthermore, we maintain the performance of estimated
-views and the final view and reduce the mutual information of every
-two views. To comprehensively evaluate the performance of CoGSL,
-we conduct extensive experiments on several datasets under clean
-and attacked conditions, which demonstrate the effectiveness and
-robustness of CoGSL. </p></div>
-    <p style="margin:0"><button class="accordion">
-      Vedio
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://www.youtube.com/watch?v=cSohAhgO8Po">Online Presentation</a> </p></div><br>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>This paper proposes an OTA (Over the Air) test method for terminal multiple-input multiple-output (MIMO) systems using carrier aggregation technology, analyzes the influence of the condition number of the propagation matrix and the center frequency spacing of the sub-carriers on carrier aggregation on measurement accuracy. The simulation results show that when the condition number of the propagation matrix is small, the system can still provide good isolation between the channels of the terminal even the sub-carrier center frequency spacing is relatively large. If the sub-carrier center frequency spacing is small, it allows a higher condition number for the transmission matrix between the probe and the terminal antenna. Typically, when the condition number is 5, the center frequency spacing of the subcarriers can reach 3%.</p></div><br>
     
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2105.09111">Self-supervised Heterogeneous Graph Neural Network with Co-contrastive Learning</a> <br> <b>Authors</b>: Xiao Wang, <b>Nian Liu</b>, Hui Han, Chuan Shi <br><b>Conference</b>: <i>Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining</i> <b>(KDD)</b>, 2021<br>
-    <p style="margin:0"><img src="./research/model_heco.png" height="200" width="500"></p>
-    <p style="margin:0"> <b>Overview</b>:  HeCo is the first to conduct cross-view contrastive learning in heterogeneous graph. According to 
-PaperDigest, this paper is one of the most influential paper in KDD 2021 as for 2022/05.</p> 
-    <p style="margin:0"> <b>Code</b>: https://github.com/liun-online/HeCo</p> 
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://ieeexplore.ieee.org/document/9531175">A Novel Ultra-Wideband Plane Wave Generator Antenna Array for OTA Test</a> <br> <b>Authors</b>: Zhiyuan Yu, Zhengpeng Wang, Shiyao Zhu, <b>Si Tang</b>, and Yuanhua Tang<br><b>Conference</b>: <i>IEEE International Conference on Electronic Information and Communication Technology </i> <b>(ICEICT)</b>, 2021<br>
+    <p style="text-align:center"><img src="./research/ICEICT2.png" height="200" width="250"></p>
+    <p style="margin:0"><img src="./research/ICEICT3.png" height="200" width="500"></p>
+    <p style="margin:0"> <b>Overview</b>: We propose an ultra-wideband PWG to satisfy multi-mode test requirement. We also present a novel PWG excitations optimization method which can model the actual radiation 
+situation more accurately than the traditional ideal point source method.</p> 
     <p style="margin:0"><button class="accordion"> 
     Abstract
     </button>   
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Heterogeneous graph neural networks (HGNNs) as an emerging technique have shown superior capacity of dealing with heterogeneous information network (HIN). However, most HGNNs follow a semi-supervised learning manner, which notably limits their wide use in reality since labels are usually scarce in real applications. Recently, contrastive learning, a self-supervised method, becomes one of the most exciting learning paradigms and shows great potential when there are no labels. In this paper, we study the problem of self-supervised HGNNs and propose a novel co-contrastive learning mechanism for HGNNs, named HeCo. Different from traditional contrastive learning which only focuses on contrasting positive and negative samples, HeCo employs cross-viewcontrastive mechanism. Specifically, two views of a HIN (network schema and meta-path views) are proposed to learn node embeddings, so as to capture both of local and high-order structures simultaneously. Then the cross-view contrastive learning, as well as a view mask mechanism, is proposed, which is able to extract the positive and negative embeddings from two views. This enables the two views to collaboratively supervise each other and finally learn high-level node embeddings. Moreover, two extensions of HeCo are designed to generate harder negative samples with high quality, which further boosts the performance of HeCo. Extensive experiments conducted on a variety of real-world networks show the superior performance of the proposed methods over the state-of-the-arts.</p></div>
-    <p style="margin:0"><button class="accordion">
-      Poster
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="./research/poster_heco.pdf">Poster</a></p></div>
-    <p style="margin:0"><button class="accordion">
-      Vedio
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://dl.acm.org/doi/10.1145/3447548.3467415">Online Presentation</a></p></div><br>
-    
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://dl.acm.org/doi/10.1145/3468674">Embedding Heterogeneous Information Network in Hyperbolic Spaces</a> <br> <b>Authors</b>: Yiding Zhang, Xiao Wang, <b>Nian Liu</b>, Chuan Shi <br><b>Journal</b>: <i>ACM Transactions on Knowledge Discovery from Data</i> <b>(ACM TKDD)</b>, 2021<br>
-    <p style="margin:0"> <b>Overview</b>:  We are the first to explore HIN embedding in hyperbolic spaces, naturally capture the hierarchical 
-and power-law structure in complex network.</p> 
-    <p style="margin:0"><button class="accordion"> 
-    Abstract
-    </button>   
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Heterogeneous information network (HIN) embedding, aiming to project HIN into a low-dimensional space, has attracted considerable research attention. Most of the existing HIN embedding methods focus on preserving the inherent network structure and semantic correlations in Euclidean spaces. However, one fundamental problem is whether the Euclidean spaces are the intrinsic spaces of HIN? Recent researches find the complex network with hyperbolic geometry can naturally reflect some properties, e.g., hierarchical and power-law structure. In this article, we make an effort toward embedding HIN in hyperbolic spaces. We analyze the structures of three HINs and discover some properties, e.g., the power-law distribution, also exist in HINs. Therefore, we propose a novel HIN embedding model HHNE. Specifically, to capture the structure and semantic relations between nodes, HHNE employs the meta-path guided random walk to sample the sequences for each node. Then HHNE exploits the hyperbolic distance as the proximity measurement. We also derive an effective optimization strategy to update the hyperbolic embeddings iteratively. Since HHNE optimizes different relations in a single space, we further propose the extended model HHNE++. HHNE++ models different relations in different spaces, which enables it to learn complex interactions in HINs. The optimization strategy of HHNE++ is also derived to update the parameters of HHNE++ in a principle manner. The experimental results demonstrate the effectiveness of our proposed models.</p></div><br>
-    
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2104.07477">Lorentzian Graph Convolutional Networks</a> <br> <b>Authors</b>: Yiding Zhang, Xiao Wang, Chuan Shi, <b>Nian Liu</b>, Guojie Song <br><b>Conference</b>: <i>International World Wide Web Conference</i> <b>(TheWebConf)</b>, 2021<br>
-    <p style="margin:0"><img src="./research/model_lgcn.PNG" height="150" width="500"></p>
-    <p style="margin:0"> <b>Overview</b>: We study on the hyperbolic GCN, rebuild graph operations with Lorentzian version and design a 
-neighborhood aggregation method based on the centroid of Lorentzian distance.</p> 
-    <p style="margin:0"> <b>Code</b>: https://github.com/BUPT-GAMMA/lgcn_torch</p> 
-    <p style="margin:0"><button class="accordion"> 
-    Abstract
-    </button> 
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Graph convolutional networks (GCNs) have received considerable research attention recently. Most GCNs learn the node representations in Euclidean geometry, but that could have a high distortion in the case of embedding graphs with scale-free or hierarchical structure. Recently, some GCNs are proposed to deal with this problem in non-Euclidean geometry, e.g., hyperbolic geometry. Although hyperbolic GCNs achieve promising performance, existing hyperbolic graph operations actually cannot rigorously follow the hyperbolic geometry, which may limit the ability of hyperbolic geometry and thus hurt the performance of hyperbolic GCNs. In this paper, we propose a novel hyperbolic GCN named Lorentzian graph convolutional network (LGCN), which rigorously guarantees the learned node features follow the hyperbolic geometry. Specifically, we rebuild the graph operations of hyperbolic GCNs with Lorentzian version, e.g., the feature transformation and non-linear activation. Also, an elegant neighborhood aggregation method is designed based on the centroid of Lorentzian distance. Moreover, we prove some proposed graph operations are equivalent in different types of hyperbolic geometry, which fundamentally indicates their correctness. Experiments on six datasets show that LGCN performs better than the state-of-the-art methods. LGCN has lower distortion to learn the representation of tree-likeness graphs compared with existing hyperbolic GCNs. We also find that the performance of some hyperbolic GCNs can be improved by simply replacing the graph operations with those we defined in this paper.</p></div><br>
-
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2201.07708">Debiased Graph Neural Networks with Agnostic Label Selection Bias</a> <br> <b>Authors</b>: Shaohua Fan, Xiao Wang, Chuan Shi, Kun Kuang, <b>Nian Liu</b>, Bai Wang <br><b>Journal</b>: <i>IEEE Transactions on Neural Networks and Learning Systems </i> <b>(IEEE TNNLS)</b>, 2022<br>
-    <p style="margin:0"><img src="./research/model_tnnls.PNG" height="200" width="500"></p>
-    <p style="margin:0"> <b>Overview</b>: We focus on the label selection bias in GNN, and propose Debiased GNN to eliminate spurious 
-correlation by reweighting samples and improve stability of prediction.</p> 
-    <p style="margin:0"> <b>Code</b>: https://github.com/googlebaba/TNNLS2022-DGNN</p> 
-    <p style="margin:0"><button class="accordion"> 
-    Abstract
-    </button> 
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>Most existing Graph Neural Networks (GNNs) are proposed without considering the selection bias in data, i.e., the inconsistent distribution between the training set with test set. In reality, the test data is not even available during the training process, making selection bias agnostic. Training GNNs with biased selected nodes leads to significant parameter estimation bias and greatly impacts the generalization ability on test nodes. In this paper, we first present an experimental investigation, which clearly shows that the selection bias drastically hinders the generalization ability of GNNs, and theoretically prove that the selection bias will cause the biased estimation on GNN parameters. Then to remove the bias in GNN estimation, we propose a novel Debiased Graph Neural Networks (DGNN) with a differentiated decorrelation regularizer. The differentiated decorrelation regularizer estimates a sample weight for each labeled node such that the spurious correlation of learned embeddings could be eliminated. We analyze the regularizer in causal view and it motivates us to differentiate the weights of the variables based on their contribution on the confounding bias. Then, these sample weights are used for reweighting GNNs to eliminate the estimation bias, thus help to improve the stability of prediction on unknown test nodes. Comprehensive experiments are conducted on several challenging graph datasets with two kinds of label selection biases. The results well verify that our proposed model outperforms the state-of-the-art methods and DGNN is a flexible framework to enhance existing GNNs.</p></div><br>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p>This paper presents an ultra-wideband one-dimension plane wave generator (PWG) antenna array. The electrical small wideband Vivaldi antenna elements are employed. Both the coupling and environment effect are involved in the proposed plane wave excitations optimization method. The theoretical bandwidth covers over 0.7GHz to 7GHz. The PWG generates plane wave whose amplitude variation is below ±1.45dB and phase variation is below ±10.5°in work frequency band by proposed method, which is better than the traditional optimization method results.</p></div><br>
+   
     
     <hr>
     
     
     <h2><a id="recent-RRs-updated" class="anchor" href="#RRpapers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Papers under Revision</h2>
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold">Hierarchical Contrastive Learning Enhanced Heterogeneous Graph Neural Network</a> <br> <b>Authors</b>: <b>Nian Liu</b>, Xiao Wang, Hui Han, Chuan Shi <br> <b>Journal</b>: <i>IEEE Transactions on Knowledge and Data Engineering</i> <b>(TKDE)</b><br>
-    <p style="margin:0"> <b>Overview</b>: This work argues that besides cross-view contrast to capture commonality in HeCo, view-specific 
-information also should be explored by intra-view contrast. </p>
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold">A Fast and Efficient Calibration Method for Phased Array Antennas using Fourier-Structured Excitation Matrix</a> <br> <b>Authors</b>: <b>Si Tang</b>, Zhengpeng Wang, Chong Pan, Rui Su, Wei Fan, and Steven Gao <br> <b>Journal</b>: <i>IEEE Transactions on Antennas and Propagation</i> <b>(TAP)</b><br>
+    <p style="margin:0"> <b>Overview</b>: The proposed algorithm can significantly reduce the measurement time while maintaining the same calibration accuracy, which can be very valuable for future large-scale antenna systems.</p>
     <p style="margin:0"><button class="accordion">
       Abstract
     </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Heterogeneous graph neural networks (HGNNs) as an emerging technique have shown superior capacity of dealing with
-heterogeneous information network (HIN). However, most HGNNs follow a semi-supervised learning manner, which notably limits their
-wide use in reality since labels are usually scarce in real applications. Recently, contrastive learning, a self-supervised method, becomes
-one of the most exciting learning paradigms and shows great potential when there are no labels. In this paper, we study the problem
-of self-supervised HGNNs and propose a novel co-contrastive learning mechanism for HGNNs, named HeCo. Different from traditional
-contrastive learning which only focuses on contrasting positive and negative samples, HeCo employs cross-view contrastive mechanism.
-Specifically, two views of a HIN (network schema and meta-path views) are proposed to learn node embeddings, so as to capture both
-of local and high-order structures simultaneously. Then the cross-view contrastive learning, as well as a view mask mechanism, is
-proposed, which is able to extract the positive and negative embeddings from two views. This enables the two views to collaboratively
-supervise each other and finally learn high-level node embeddings. Moreover, to further boost the performance of HeCo, two additional
-methods are designed to generate harder negative samples with high quality. The essence of HeCo is to make positive samples from
-different views close to each other by cross-view contrast, and learn the factors invariant to two proposed views. However, besides
-the invariant factors, view-specific factors complementally provide the diverse structure information between different nodes, which also
-should be contained into the final embeddings. Therefore, we need to further explore each view independently and propose a modified
-model, called HeCo++. Specifically, HeCo++ conducts hierarchical contrastive learning, including cross-view and intra-view contrasts,
-which aims to enhance the mining of respective structures. Extensive experiments conducted on a variety of real-world networks show
-the superior performance of the proposed methods over the state-of-the-arts. </p></div>
-
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> This paper presents a novel phased array antenna calibration method. Unlike conventional phased array calibration methods equipped with only one probe antenna in the far-field setup, multiple measurement probes are introduced in the proposed algorithm to significantly improve the measurement efficiency. Specifically, a novel construction method for excitation matrix (which contains excitation coefficients for phased array elements) is proposed, where phase differences introduced by the spatial locations of the multiple probes are perfectly incorporated into the Fourier-structured excitation matrix, thereby improving
+the measurement accuracy and efficiency. The proposed method can offer robust array calibration results (guaranteed by the low condition number of the constructed excitation matrix with Fourier structure) and high measurement efficiency (offered by multi-probe setups). To experimentally validate the proposed algorithm, a multi-channel (i.e. multi-probe) far-field measurement setup realized by a compact antenna test range (CATR) with offset-focus multiple feeds was utilized, to save space and system cost. A four-element open-ended waveguide array operating at 24.95GHz and two-feed CATR systems were employed as the
+antenna under test (AUT) and multiple probes, respectively, to validate the effectiveness and robustness of the proposed phased array calibration algorithm. The proposed algorithm will be highly valuable for efficient phased array calibration, especially for future antenna systems equipped with large-scale antenna configuration.</p></div>
+    <hr>
+    
+    
+    <h2><a id="recent-RRs-updated" class="anchor" href="#RRpapers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Patents</h2>
+    <ul style="list-style-type:square">
+         <li>Si Tang, Zhengpeng Wang, 2022. Short-range parallel wireless transmission system and method based on matrix inversion. <br>CN112994768A, filed Feb 5, 2020, and granted Aug 30, 2022.</li>
+         <li>Zhengpeng Wang, Si Tang. 2021. Phased-array antenna phase calibration measurement system and method. <br>CN111987462A, filed Aug 21, 2020, and granted Jun 29, 2021.</li>
+         </ul>
+        
       </section>
     </div>
     <script src="javascripts/scale.fix.js"></script>
